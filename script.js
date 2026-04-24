@@ -1,37 +1,41 @@
-// Inicialização de Ícones e Animações
 document.addEventListener('DOMContentLoaded', () => {
-    // Lucide Icons
+    // Inicialização de Ícones
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
 
-    // AOS Animações
+    // Inicialização de Animações Scroll
     if (typeof AOS !== 'undefined') {
         AOS.init({
             once: true,
-            duration: 800,
-            offset: 100,
-            easing: 'ease-out-cubic'
+            duration: 1000,
+            offset: 150,
+            easing: 'ease-out-expo'
         });
     }
 
-    // Controle da Navbar no Scroll
+    // Header Dinâmico
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
+    const handleScroll = () => {
+        if (window.scrollY > 100) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
-    });
+    };
 
-    // Smooth Scroll para links internos
+    window.addEventListener('scroll', handleScroll);
+
+    // Scroll Suave para Links Internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 70, // Compensação da altura da navbar
                     behavior: 'smooth'
                 });
             }
