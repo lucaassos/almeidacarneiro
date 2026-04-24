@@ -1,25 +1,27 @@
-/* Custom Styles */
+/* Configurações de Design */
 :root {
     --brand-blue: #1e3a8a;
     --brand-dark: #0f172a;
 }
 
+/* Imagem de Fundo da Hero (img1) */
 .bg-hero-pattern {
     background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8)), 
-                      url('./img/img1.png');
+                      url('./img/img1');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+/* Ajuste para mobile (fixed background nem sempre funciona bem em celular) */
 @media (max-width: 1024px) {
     .bg-hero-pattern {
         background-attachment: scroll;
     }
 }
 
-/* Navbar Scrolled State */
+/* Estado da Navbar ao rolar */
 #navbar.scrolled {
     background-color: rgba(255, 255, 255, 0.98);
     height: 70px;
@@ -30,7 +32,7 @@
     height: 70px;
 }
 
-/* Custom Scrollbar */
+/* Scrollbar Personalizada */
 ::-webkit-scrollbar {
     width: 6px;
 }
