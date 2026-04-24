@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almeida Carneiro BOULEVARD | Lançamento em Ilhéus</title>
+    <meta name="description" content="O novo marco urbano de Ilhéus. Uso misto, fachada ativa e vista permanente para o mar.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1e3a8a', // Cor aproximada da logo da construtora
+                            dark: '#0f172a',
+                            light: '#f8fafc',
+                            accent: '#10b981' // Fachada verde
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom base styles para complementar o Tailwind */
+        body { font-family: 'Inter', sans-serif; }
+        .bg-hero-pattern {
+            /* Idealmente, substituir pela imagem do render do PDF */
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop') center/cover no-repeat fixed;
+        }
+    </style>
+</head>
+<body class="bg-brand-light text-slate-800 antialiased selection:bg-brand-blue selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 font-bold text-2xl tracking-tighter text-brand-dark">
+                    AC <span class="text-brand-blue font-light">BOULEVARD</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#conceito" class="text-sm font-medium hover:text-brand-blue transition-colors">O Projeto</a>
+                    <a href="#diferenciais" class="text-sm font-medium hover:text-brand-blue transition-colors">Diferenciais</a>
+                    <a href="#investimento" class="text-sm font-medium hover:text-brand-blue transition-colors">Investimento</a>
+                </div>
+                <a href="#contato" class="hidden md:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-md text-white bg-brand-blue hover:bg-blue-800 shadow-sm transition-all hover:shadow-md">
+                    Falar com Corretor
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="relative h-screen flex items-center justify-center bg-hero-pattern text-white text-center px-4">
+            <div class="max-w-4xl mx-auto" data-aos="fade-up" data-aos-duration="1000">
+                <span class="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-sm text-xs font-semibold tracking-wider uppercase mb-6 border border-white/30">
+                    Lançamento Exclusivo
+                </span>
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                    O novo marco urbano <br class="hidden md:block" /> de <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">Ilhéus</span>.
+                </h1>
+                <p class="text-lg md:text-2xl text-slate-300 mb-10 max-w-2xl mx-auto font-light">
+                    Uso misto, fachada ativa e vista permanente para o mar.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contato" class="px-8 py-4 bg-brand-blue hover:bg-blue-700 text-white rounded-lg font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2">
+                        <i data-lucide="message-circle" class="w-5 h-5"></i> Agendar Apresentação
+                    </a>
+                    <a href="#conceito" class="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white rounded-lg font-semibold transition-all border border-white/20">
+                        Conhecer o Projeto
+                    </a>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <i data-lucide="chevron-down" class="text-white/50 w-8 h-8"></i>
+            </div>
+        </section>
+
+        <section id="conceito" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Arquitetura em Camadas</h2>
+                    <p class="text-slate-600 text-lg">Um mix inteligente de produtos que atende a múltiplos perfis, otimizando a eficiência e o conforto.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <article class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow group cursor-default" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="font-bold text-xl">01</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Térreo - Fachada Ativa</h3>
+                        <p class="text-slate-600">Lojas, cafés e serviços voltados para a rua com calçadas generosas. Integra o edifício ao fluxo urbano.</p>
+                    </article>
+
+                    <article class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow group cursor-default" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="font-bold text-xl">02</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Lâminas Corporativas</h3>
+                        <p class="text-slate-600">Salas comerciais e escritórios de alto padrão. Ideal para clínicas, coworkings e empresas que buscam prestígio.</p>
+                    </article>
+
+                    <article class="bg-slate-50 rounded-2xl p-8 border border-slate-100 hover:shadow-xl transition-shadow group cursor-default" data-aos="fade-up" data-aos-delay="300">
+                        <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <span class="font-bold text-xl">03</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-dark mb-3">Residencial Escalonado</h3>
+                        <p class="text-slate-600">Volume escalonado criando terraços abertos com máxima privacidade e vistas privilegiadas para o mar.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="diferenciais" class="py-24 bg-slate-900 text-white overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <h2 class="text-3xl md:text-4xl font-bold mb-6">Fachada Verde Icônica</h2>
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <i data-lucide="thermometer-sun" class="w-6 h-6 text-emerald-400 mr-4 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Conforto Térmico</h4>
+                                    <p class="text-slate-400 mt-1">Redução da incidência solar direta, ambientes mais frescos e economia de energia.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="leaf" class="w-6 h-6 text-emerald-400 mr-4 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Bem-estar Visual</h4>
+                                    <p class="text-slate-400 mt-1">Proximidade com a natureza no cotidiano urbano, reduzindo o estresse.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="waves" class="w-6 h-6 text-blue-400 mr-4 flex-shrink-0 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Platô de Lazer</h4>
+                                    <p class="text-slate-400 mt-1">Área suspensa exclusiva com vista infinita para o litoral de Ilhéus.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="relative" data-aos="fade-left">
+                        <div class="aspect-[4/5] bg-gradient-to-tr from-slate-800 to-slate-700 rounded-3xl overflow-hidden shadow-2xl border border-slate-700 flex items-center justify-center">
+                           <span class="text-slate-500 font-mono text-sm">[Render da Fachada Verde]</span>
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-emerald-500 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-pulse"></div>
+                        <div class="absolute -top-6 -right-6 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-2xl opacity-50 animate-pulse" style="animation-delay: 2s;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="investimento" class="py-24 bg-brand-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Por que investir na Zona Sul de Ilhéus?</h2>
+                    <p class="text-slate-600 text-lg">O epicentro do novo desenvolvimento urbano e o destino preferencial para investimentos de alto padrão.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100" data-aos="zoom-in" data-aos-delay="0">
+                        <i data-lucide="trending-up" class="w-8 h-8 text-brand-blue mb-4"></i>
+                        <h4 class="font-bold text-slate-800 mb-2">Valorização Patrimonial</h4>
+                        <p class="text-sm text-slate-500">Alta valorização por arquitetura autoral e localização nobre.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100" data-aos="zoom-in" data-aos-delay="100">
+                        <i data-lucide="dollar-sign" class="w-8 h-8 text-brand-blue mb-4"></i>
+                        <h4 class="font-bold text-slate-800 mb-2">Renda Recorrente</h4>
+                        <p class="text-sm text-slate-500">Rentabilidade garantida via locação de lojas, salas e unidades.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100" data-aos="zoom-in" data-aos-delay="200">
+                        <i data-lucide="zap" class="w-8 h-8 text-brand-blue mb-4"></i>
+                        <h4 class="font-bold text-slate-800 mb-2">Alta Liquidez</h4>
+                        <p class="text-sm text-slate-500">Forte apelo visual e funcional, garantindo facilidade na revenda.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-100" data-aos="zoom-in" data-aos-delay="300">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-brand-blue mb-4"></i>
+                        <h4 class="font-bold text-slate-800 mb-2">Segurança Jurídica</h4>
+                        <p class="text-sm text-slate-500">Entrega garantida pela solidez da Construtora Almeida Carneiro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-24 bg-brand-blue text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center" data-aos="fade-up">
+                <h2 class="text-4xl font-bold mb-8">Pronto para investir no futuro de Ilhéus?</h2>
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-8 text-left">
+                    <div class="flex items-center gap-6">
+                        <div class="w-24 h-24 rounded-full bg-slate-300 border-4 border-white shadow-inner flex-shrink-0 overflow-hidden">
+                             </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Henrique Menezes</h3>
+                            <p class="text-blue-200 font-medium mb-1">Corretor de Imóveis Especialista</p>
+                            <p class="text-sm text-blue-300 font-mono">CRECI/BA 29725</p>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/5573988177572?text=Olá%20Henrique,%20gostaria%20de%20saber%20mais%20sobre%20o%20lançamento%20Almeida%20Carneiro%20Boulevard." 
+                       target="_blank"
+                       class="w-full md:w-auto px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-bold transition-transform hover:scale-105 shadow-lg flex items-center justify-center gap-3">
+                        <i data-lucide="smartphone" class="w-5 h-5"></i>
+                        (73) 98817-7572
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-slate-800 text-center text-sm">
+        <p>&copy; 2026 Construtora Almeida Carneiro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicializa ícones
+        lucide.createIcons();
+
+        // Inicializa animações on scroll
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+
+        // Efeito de sombra na Navbar ao dar scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-sm');
+            } else {
+                nav.classList.remove('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
