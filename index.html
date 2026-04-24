@@ -29,7 +29,7 @@
         }
     </script>
 </head>
-<body class="bg-brand-light text-slate-800 antialiased">
+<body class="bg-brand-light text-slate-800 antialiased selection:bg-brand-blue selection:text-white">
 
     <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -106,38 +106,45 @@
 
         <section id="diferenciais" class="py-32 bg-brand-dark text-white overflow-hidden">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-                    <div data-aos="fade-right">
-                        <h2 class="text-4xl md:text-7xl font-extrabold mb-12 tracking-tighter uppercase leading-none">A Fachada <br/>Verde <span class="text-emerald-400">Icônica</span>.</h2>
-                        <div class="space-y-12">
-                            <div class="flex gap-8">
-                                <i data-lucide="thermometer-sun" class="w-12 h-12 text-emerald-400 shrink-0"></i>
+                <div class="flex flex-col gap-16">
+                    
+                    <div data-aos="fade-up" class="flex flex-col lg:flex-row gap-12 lg:items-end lg:justify-between">
+                        <h2 class="text-4xl md:text-7xl font-extrabold tracking-tighter uppercase leading-none">
+                            A Fachada <br/>Verde <span class="text-emerald-400">Icônica</span>.
+                        </h2>
+                        
+                        <div class="flex flex-col sm:flex-row gap-8">
+                            <div class="flex gap-6 items-start max-w-xs">
+                                <i data-lucide="thermometer-sun" class="w-10 h-10 text-emerald-400 shrink-0"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold uppercase tracking-widest mb-2">Conforto Térmico</h4>
-                                    <p class="text-slate-400 font-light">Redução da incidência solar direta, proporcionando economia de energia e bem-estar.</p>
+                                    <h4 class="text-lg font-bold uppercase tracking-widest mb-1">Conforto Térmico</h4>
+                                    <p class="text-slate-400 font-light text-sm">Redução da incidência solar e mais bem-estar.</p>
                                 </div>
                             </div>
-                            <div class="flex gap-8">
-                                <i data-lucide="waves" class="w-12 h-12 text-blue-400 shrink-0"></i>
+                            <div class="flex gap-6 items-start max-w-xs">
+                                <i data-lucide="waves" class="w-10 h-10 text-blue-400 shrink-0"></i>
                                 <div>
-                                    <h4 class="text-xl font-bold uppercase tracking-widest mb-2">Platô de Lazer</h4>
-                                    <p class="text-slate-400 font-light">Ponto de encontro suspenso com vista panorâmica exclusiva para o mar.</p>
+                                    <h4 class="text-lg font-bold uppercase tracking-widest mb-1">Platô de Lazer</h4>
+                                    <p class="text-slate-400 font-light text-sm">Vista panorâmica exclusiva para o mar.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="relative" data-aos="fade-left">
-                        <div class="aspect-[3/4] border-[20px] border-white/5 overflow-hidden shadow-2xl">
-                            <img src="./img/img2.png" alt="Fachada Verde" class="w-full h-full object-cover">
-                        </div>
+
+                    <div class="relative w-full aspect-video md:aspect-[21/9] lg:aspect-[4/1] rounded-none md:rounded-3xl overflow-hidden shadow-2xl border-y-8 md:border-8 border-white/5" data-aos="fade-up">
+                        <img src="./img/img2.png" alt="Fachada Verde" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/40 to-transparent pointer-events-none"></div>
                     </div>
+                    
                 </div>
             </div>
         </section>
 
         <section id="investimento" class="py-32 bg-brand-light">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-4xl md:text-6xl font-extrabold text-brand-dark tracking-tighter uppercase mb-20">ROI Sólido.</h2>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-brand-dark tracking-tighter uppercase">ROI Sólido.</h2>
+                </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="bg-white p-10 shadow-sm border-b-4 border-brand-blue" data-aos="zoom-in">
                         <h4 class="text-lg font-bold uppercase mb-4 tracking-tighter">Valorização Real</h4>
@@ -172,7 +179,7 @@
                                 <p class="text-emerald-400 font-bold tracking-widest text-xs uppercase">Corretor Specialist | CRECI/BA 29725</p>
                             </div>
                         </div>
-                        <a href="https://wa.me/5573988177572" target="_blank" class="px-12 py-6 bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-black uppercase tracking-[0.2em] shadow-xl transition-all hover:scale-105">
+                        <a href="https://wa.me/5573988177572" target="_blank" class="px-12 py-6 bg-emerald-500 hover:bg-emerald-600 text-white text-sm font-black uppercase tracking-[0.2em] shadow-xl transition-all hover:scale-105 active:scale-95">
                             Falar no WhatsApp
                         </a>
                     </div>
