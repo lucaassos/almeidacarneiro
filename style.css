@@ -3,9 +3,10 @@
     --brand-dark: #0f172a;
 }
 
+/* img1.png buscada na raiz do projeto */
 .bg-hero-pattern {
     background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.8)), 
-                      url('./img1.png'); /* Caminho corrigido para a raiz */
+                      url('./img1.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
