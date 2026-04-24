@@ -1,10 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Inicialização de Ícones Lucide
     if (typeof lucide !== 'undefined') {
         lucide.createIcons();
     }
 
-    // Inicialização de Animações AOS
     if (typeof AOS !== 'undefined') {
         AOS.init({
             once: true,
@@ -14,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Controle da Navbar durante o scroll
     const navbar = document.getElementById('navbar');
     const handleScroll = () => {
         if (window.scrollY > 100) {
@@ -26,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Scroll Suave para links internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -35,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 70, // Compensa a altura da navbar
+                    top: targetElement.offsetTop - 70,
                     behavior: 'smooth'
                 });
             }
